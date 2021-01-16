@@ -21,8 +21,6 @@ function getRepositoryIndex(id, response) {
 }
 
 app.get('/repositories', (request, response) => {
-  const { title, url, techs } = request.query;
-
   return response.json(repositories);
 });
 
